@@ -41,5 +41,10 @@ namespace KeyboardFinal
         {
             interval = Convert.ToInt16(My_Dialogs.InputBox("Please enter a delay"));
         }
+
+        private void enterBtn_Click(object sender, EventArgs e)
+        {
+            notePadBox.AppendText("\n");
+        }
     }
 }

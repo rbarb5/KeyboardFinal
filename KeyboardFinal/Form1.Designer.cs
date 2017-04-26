@@ -65,6 +65,7 @@
             this.enterBtn.TabIndex = 43;
             this.enterBtn.Text = "Enter";
             this.enterBtn.UseVisualStyleBackColor = true;
+            this.enterBtn.Click += new System.EventHandler(this.enterBtn_Click);
             // 
             // hashBtn
             // 
