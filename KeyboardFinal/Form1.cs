@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MyDialogs;
+using MyDialogs; //using mydialogs
 
 namespace KeyboardFinal
 {
@@ -17,6 +17,7 @@ namespace KeyboardFinal
         int interval = 500;
         int Str_KeyStrokes = 0;
         bool firstVisit = true;
+        string bbox;
 
         public Keyboard()
         {
@@ -115,20 +116,9 @@ namespace KeyboardFinal
             if (Str_KeyStrokes == 9)
             {
                 Str_KeyStrokes = 0;
-            }
+            }           
             
         }
-
-
-
-
-
-
-
-
-
-
-
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -180,6 +170,11 @@ namespace KeyboardFinal
                 timer1.Enabled = true;
                 Console.WriteLine("timer started - not first click");
             }
+        }
+
+        private void emptyBtn_Click(object sender, EventArgs e)
+        {
+            notePadBox.AppendText(builderBox.Text);
         }
     }
 }

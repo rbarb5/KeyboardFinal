@@ -33,7 +33,6 @@
             this.hashBtn = new System.Windows.Forms.Button();
             this.zeroBtn = new System.Windows.Forms.Button();
             this.starBtn = new System.Windows.Forms.Button();
-            this.emptyBtn2 = new System.Windows.Forms.Button();
             this.threeBtn = new System.Windows.Forms.Button();
             this.twoBtn = new System.Windows.Forms.Button();
             this.oneBtn = new System.Windows.Forms.Button();
@@ -96,14 +95,6 @@
             this.starBtn.Text = "*-_";
             this.starBtn.UseVisualStyleBackColor = true;
             // 
-            // emptyBtn2
-            // 
-            this.emptyBtn2.Location = new System.Drawing.Point(320, 331);
-            this.emptyBtn2.Name = "emptyBtn2";
-            this.emptyBtn2.Size = new System.Drawing.Size(49, 47);
-            this.emptyBtn2.TabIndex = 39;
-            this.emptyBtn2.UseVisualStyleBackColor = true;
-            // 
             // threeBtn
             // 
             this.threeBtn.Location = new System.Drawing.Point(265, 384);
@@ -164,9 +155,11 @@
             // 
             this.emptyBtn.Location = new System.Drawing.Point(320, 278);
             this.emptyBtn.Name = "emptyBtn";
-            this.emptyBtn.Size = new System.Drawing.Size(49, 47);
+            this.emptyBtn.Size = new System.Drawing.Size(49, 100);
             this.emptyBtn.TabIndex = 32;
+            this.emptyBtn.Text = "Append";
             this.emptyBtn.UseVisualStyleBackColor = true;
+            this.emptyBtn.Click += new System.EventHandler(this.emptyBtn_Click);
             // 
             // nineBtn
             // 
@@ -236,6 +229,7 @@
             // 
             this.builderBox.Location = new System.Drawing.Point(173, 188);
             this.builderBox.Name = "builderBox";
+            this.builderBox.ReadOnly = true;
             this.builderBox.Size = new System.Drawing.Size(100, 20);
             this.builderBox.TabIndex = 44;
             this.builderBox.Text = "";
@@ -305,7 +299,6 @@
             this.Controls.Add(this.hashBtn);
             this.Controls.Add(this.zeroBtn);
             this.Controls.Add(this.starBtn);
-            this.Controls.Add(this.emptyBtn2);
             this.Controls.Add(this.threeBtn);
             this.Controls.Add(this.twoBtn);
             this.Controls.Add(this.oneBtn);
@@ -338,7 +331,6 @@
         private System.Windows.Forms.Button hashBtn;
         private System.Windows.Forms.Button zeroBtn;
         private System.Windows.Forms.Button starBtn;
-        private System.Windows.Forms.Button emptyBtn2;
         private System.Windows.Forms.Button threeBtn;
         private System.Windows.Forms.Button twoBtn;
         private System.Windows.Forms.Button oneBtn;
