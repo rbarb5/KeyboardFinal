@@ -15,7 +15,7 @@ namespace KeyboardFinal
     {
         bool multipress = true;
         int interval = 500;
-        int timePressed = 0;
+        int timesPressed = 0;
         bool firstVisit = true;
 
         public Keyboard()
@@ -46,5 +46,25 @@ namespace KeyboardFinal
         {
             notePadBox.AppendText("\n");
         }
-    }
-}
+
+        private void oneBtn_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine(timer1.Interval.ToString());
+            builderBox.Clear();
+            if (firstVisit == true)
+            {
+                firstVisit = false;
+                timer1.Enabled = true;
+                Console.WriteLine("timer starter");
+                timesPressed++;
+                builderBox.Text = Convert.ToString(timesPressed);
+            }
+            else if (timer1.Enabled == true)
+            {
+                timesPressed++;
+                builderBox.Text = Convert.ToString(timesPressed);
+                timer1.Enabled = false;
+                timer1.Enabled = true;
+                Console.WriteLine("timer restarted");
+            }
+            else if (timer1.Enabled == false)

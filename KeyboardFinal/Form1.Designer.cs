@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.enterBtn = new System.Windows.Forms.Button();
             this.hashBtn = new System.Windows.Forms.Button();
             this.zeroBtn = new System.Windows.Forms.Button();
@@ -54,6 +55,7 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configureDelayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,6 +130,7 @@
             this.oneBtn.TabIndex = 36;
             this.oneBtn.Text = "1\r\nPQRS";
             this.oneBtn.UseVisualStyleBackColor = true;
+            this.oneBtn.Click += new System.EventHandler(this.oneBtn_Click);
             // 
             // sixBtn
             // 
@@ -285,6 +288,10 @@
             this.configureDelayToolStripMenuItem.Text = "Configure Delay";
             this.configureDelayToolStripMenuItem.Click += new System.EventHandler(this.configureDelayToolStripMenuItem_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 300;
+            // 
             // Keyboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -316,6 +323,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Keyboard";
             this.Text = "Keyboard";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -351,6 +359,7 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configureToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configureDelayToolStripMenuItem;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
