@@ -282,6 +282,7 @@
             this.configureDelayToolStripMenuItem.Name = "configureDelayToolStripMenuItem";
             this.configureDelayToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.configureDelayToolStripMenuItem.Text = "Configure Delay";
+            this.configureDelayToolStripMenuItem.Click += new System.EventHandler(this.configureDelayToolStripMenuItem_Click);
             // 
             // Keyboard
             // 

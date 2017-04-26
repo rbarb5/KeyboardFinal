@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MyDialogs;
 
 namespace KeyboardFinal
 {
@@ -34,6 +35,11 @@ namespace KeyboardFinal
                 statusBox.Text = "Multi-press Mode";
                 multipress = true;
             }
+        }
+
+        private void configureDelayToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            interval = Convert.ToInt16(My_Dialogs.InputBox("Please enter a delay"));
         }
     }
 }
