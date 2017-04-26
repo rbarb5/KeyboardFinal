@@ -13,9 +13,9 @@ namespace KeyboardFinal
 {
     public partial class Keyboard : Form
     {
-        bool multipress = true;
+        bool multipress = true;  //defines variables
         int interval = 500;
-        int timesPressed = 0;
+        int Str_KeyStrokes = 0;
         bool firstVisit = true;
 
         public Keyboard()
@@ -27,91 +27,96 @@ namespace KeyboardFinal
         {
             if (multipress == true)
             {
-                statusBox.Text = "Predictive Mode";
+                statusBox.Text = "Predictive Mode"; //if the mode is multipress, change the statusbox text to Predictive Mode and set multipress to false
                 multipress = false;
             }
             else
             {
-                statusBox.Text = "Multi-press Mode";
+                statusBox.Text = "Multi-press Mode"; //if the mode is predictive, change the statusbox text to multipress mode and set multipress to true
                 multipress = true;
             }
         }
 
         private void configureDelayToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            interval = Convert.ToInt16(My_Dialogs.InputBox("Please enter a delay"));
+            interval = Convert.ToInt16(My_Dialogs.InputBox("Please enter a delay")); //creates an inputbox to allow the user to choose their delay
         }
 
         private void enterBtn_Click(object sender, EventArgs e)
         {
-            notePadBox.AppendText("\n");
+            notePadBox.AppendText("\n"); //when the enter key is pressed a new line is appended to the textbox
         }
 
         private void oneBtn_Click(object sender, EventArgs e)
         {
             Console.WriteLine(timer1.Interval.ToString());
             builderBox.Clear();
-            if (firstVisit == true)
+            if (firstVisit == true) //if its the first time, set firstvisit to false, enable the timer, add 1 to Str_Keystroker and display this in the builderbox
             {
                 firstVisit = false;
                 timer1.Enabled = true;
                 Console.WriteLine("timer starter");
-                timesPressed++;
-                builderBox.Text = Convert.ToString(timesPressed);
+                Str_KeyStrokes++;
+                builderBox.Text = Convert.ToString(Str_KeyStrokes);
             }
-            else if (timer1.Enabled == true)
+            else if (timer1.Enabled == true) //if the timer is enabled, add 1 to Str_KeyStrokes, reset the timer
             {
-                timesPressed++;
-                builderBox.Text = Convert.ToString(timesPressed);
+                Str_KeyStrokes++;
+                builderBox.Text = Convert.ToString(Str_KeyStrokes);
                 timer1.Enabled = false;
                 timer1.Enabled = true;
                 Console.WriteLine("timer restarted");
             }
-            else if (timer1.Enabled == false)
+            else if (timer1.Enabled == false) //if the timer isn't enabled, set keystrokes to 1, add 1, enable timer
             {
-                timesPressed = 0;
-                timesPressed++;
-                builderBox.Text = Convert.ToString(timesPressed);
+                Str_KeyStrokes = 0;
+                Str_KeyStrokes++;
+                builderBox.Text = Convert.ToString(Str_KeyStrokes);
                 timer1.Enabled = true;
                 Console.WriteLine("timer started - not first click");
             }
 
-            if (timesPressed == 1)
+            if (Str_KeyStrokes == 1)
             {
                 builderBox.Text = "p";
             }
-            else if (timesPressed == 2)
+            else if (Str_KeyStrokes == 2)
             {
                 builderBox.Text = "q";
             }
-            else if (timesPressed == 3)
+            else if (Str_KeyStrokes == 3) //displays the correct character for each keystroke
             {
                 builderBox.Text = "r";
             }
-            else if (timesPressed == 4)
+            else if (Str_KeyStrokes == 4)
             {
                 builderBox.Text = "s";
             }
-            else if (timesPressed == 5)
+            else if (Str_KeyStrokes == 5)
             {
                 builderBox.Text = "1";
             }
-            else if (timesPressed == 6)
+            else if (Str_KeyStrokes == 6)
             {
                 builderBox.Text = "P";
             }
-            else if (timesPressed == 7)
+            else if (Str_KeyStrokes == 7)
             {
                 builderBox.Text = "Q";
             }
-            else if (timesPressed == 8)
+            else if (Str_KeyStrokes == 8)
             {
                 builderBox.Text = "R";
             }
-            else if (timesPressed == 8)
+            else if (Str_KeyStrokes == 9)
             {
                 builderBox.Text = "S";
             }
+            if (Str_KeyStrokes == 9)
+            {
+                Str_KeyStrokes = 0;
+            }
+            
         }
 
 
@@ -156,22 +161,22 @@ namespace KeyboardFinal
                 firstVisit = false;
                 timer1.Enabled = true;
                 Console.WriteLine("timer starter");
-                timesPressed++;
-                builderBox.Text = Convert.ToString(timesPressed);
+                Str_KeyStrokes++;
+                builderBox.Text = Convert.ToString(Str_KeyStrokes);
             }
             else if (timer1.Enabled == true)
             {
-                timesPressed++;
-                builderBox.Text = Convert.ToString(timesPressed);
+                Str_KeyStrokes++;
+                builderBox.Text = Convert.ToString(Str_KeyStrokes);
                 timer1.Enabled = false;
                 timer1.Enabled = true;
                 Console.WriteLine("timer restarted");
             }
             else if (timer1.Enabled == false)
             {
-                timesPressed = 0;
-                timesPressed++;
-                builderBox.Text = Convert.ToString(timesPressed);
+                Str_KeyStrokes = 0;
+                Str_KeyStrokes++;
+                builderBox.Text = Convert.ToString(Str_KeyStrokes);
                 timer1.Enabled = true;
                 Console.WriteLine("timer started - not first click");
             }
