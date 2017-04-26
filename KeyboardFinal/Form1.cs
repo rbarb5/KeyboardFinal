@@ -75,7 +75,55 @@ namespace KeyboardFinal
                 timer1.Enabled = true;
                 Console.WriteLine("timer started - not first click");
             }
+
+            if (timesPressed == 1)
+            {
+                builderBox.Text = "p";
+            }
+            else if (timesPressed == 2)
+            {
+                builderBox.Text = "q";
+            }
+            else if (timesPressed == 3)
+            {
+                builderBox.Text = "r";
+            }
+            else if (timesPressed == 4)
+            {
+                builderBox.Text = "s";
+            }
+            else if (timesPressed == 5)
+            {
+                builderBox.Text = "1";
+            }
+            else if (timesPressed == 6)
+            {
+                builderBox.Text = "P";
+            }
+            else if (timesPressed == 7)
+            {
+                builderBox.Text = "Q";
+            }
+            else if (timesPressed == 8)
+            {
+                builderBox.Text = "R";
+            }
+            else if (timesPressed == 8)
+            {
+                builderBox.Text = "S";
+            }
         }
+
+
+
+
+
+
+
+
+
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -89,5 +137,44 @@ namespace KeyboardFinal
             Console.WriteLine("timer ended");
         }
 
+
+
+
+
+
+
+
+
+
+
+        private void twoBtn_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine(timer1.Interval.ToString());
+            builderBox.Clear();
+            if (firstVisit == true)
+            {
+                firstVisit = false;
+                timer1.Enabled = true;
+                Console.WriteLine("timer starter");
+                timesPressed++;
+                builderBox.Text = Convert.ToString(timesPressed);
+            }
+            else if (timer1.Enabled == true)
+            {
+                timesPressed++;
+                builderBox.Text = Convert.ToString(timesPressed);
+                timer1.Enabled = false;
+                timer1.Enabled = true;
+                Console.WriteLine("timer restarted");
+            }
+            else if (timer1.Enabled == false)
+            {
+                timesPressed = 0;
+                timesPressed++;
+                builderBox.Text = Convert.ToString(timesPressed);
+                timer1.Enabled = true;
+                Console.WriteLine("timer started - not first click");
+            }
+        }
     }
 }
