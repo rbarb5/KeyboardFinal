@@ -43,13 +43,18 @@
             this.nineBtn = new System.Windows.Forms.Button();
             this.eightBtn = new System.Windows.Forms.Button();
             this.sevenBtn = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.sendBtn = new System.Windows.Forms.Button();
+            this.prevBtn = new System.Windows.Forms.Button();
+            this.nextBtn = new System.Windows.Forms.Button();
+            this.modeBtn = new System.Windows.Forms.Button();
             this.builderBox = new System.Windows.Forms.RichTextBox();
             this.statusBox = new System.Windows.Forms.TextBox();
             this.notePadBox = new System.Windows.Forms.RichTextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.configureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.configureDelayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // enterBtn
@@ -185,41 +190,42 @@
             this.sevenBtn.Text = "7\r\n.,\"\r\n";
             this.sevenBtn.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // sendBtn
             // 
-            this.button2.Location = new System.Drawing.Point(320, 225);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(49, 47);
-            this.button2.TabIndex = 28;
-            this.button2.Text = "Send Predicted";
-            this.button2.UseVisualStyleBackColor = true;
+            this.sendBtn.Location = new System.Drawing.Point(320, 225);
+            this.sendBtn.Name = "sendBtn";
+            this.sendBtn.Size = new System.Drawing.Size(49, 47);
+            this.sendBtn.TabIndex = 28;
+            this.sendBtn.Text = "Send Predicted";
+            this.sendBtn.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // prevBtn
             // 
-            this.button3.Location = new System.Drawing.Point(265, 225);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(49, 47);
-            this.button3.TabIndex = 27;
-            this.button3.Text = "Previous";
-            this.button3.UseVisualStyleBackColor = true;
+            this.prevBtn.Location = new System.Drawing.Point(265, 225);
+            this.prevBtn.Name = "prevBtn";
+            this.prevBtn.Size = new System.Drawing.Size(49, 47);
+            this.prevBtn.TabIndex = 27;
+            this.prevBtn.Text = "Previous";
+            this.prevBtn.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // nextBtn
             // 
-            this.button4.Location = new System.Drawing.Point(210, 225);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(49, 47);
-            this.button4.TabIndex = 26;
-            this.button4.Text = "Next";
-            this.button4.UseVisualStyleBackColor = true;
+            this.nextBtn.Location = new System.Drawing.Point(210, 225);
+            this.nextBtn.Name = "nextBtn";
+            this.nextBtn.Size = new System.Drawing.Size(49, 47);
+            this.nextBtn.TabIndex = 26;
+            this.nextBtn.Text = "Next";
+            this.nextBtn.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // modeBtn
             // 
-            this.button5.Location = new System.Drawing.Point(155, 225);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(49, 47);
-            this.button5.TabIndex = 25;
-            this.button5.Text = "Mode";
-            this.button5.UseVisualStyleBackColor = true;
+            this.modeBtn.Location = new System.Drawing.Point(155, 225);
+            this.modeBtn.Name = "modeBtn";
+            this.modeBtn.Size = new System.Drawing.Size(49, 47);
+            this.modeBtn.TabIndex = 25;
+            this.modeBtn.Text = "Mode";
+            this.modeBtn.UseVisualStyleBackColor = true;
+            this.modeBtn.Click += new System.EventHandler(this.modeBtn_Click);
             // 
             // builderBox
             // 
@@ -246,6 +252,37 @@
             this.notePadBox.TabIndex = 46;
             this.notePadBox.Text = "";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.configureToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(556, 24);
+            this.menuStrip1.TabIndex = 47;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // configureToolStripMenuItem
+            // 
+            this.configureToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.configureDelayToolStripMenuItem});
+            this.configureToolStripMenuItem.Name = "configureToolStripMenuItem";
+            this.configureToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.configureToolStripMenuItem.Text = "Configure";
+            // 
+            // configureDelayToolStripMenuItem
+            // 
+            this.configureDelayToolStripMenuItem.Name = "configureDelayToolStripMenuItem";
+            this.configureDelayToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.configureDelayToolStripMenuItem.Text = "Configure Delay";
+            // 
             // Keyboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -269,12 +306,16 @@
             this.Controls.Add(this.nineBtn);
             this.Controls.Add(this.eightBtn);
             this.Controls.Add(this.sevenBtn);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.sendBtn);
+            this.Controls.Add(this.prevBtn);
+            this.Controls.Add(this.nextBtn);
+            this.Controls.Add(this.modeBtn);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Keyboard";
             this.Text = "Keyboard";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,13 +338,17 @@
         private System.Windows.Forms.Button nineBtn;
         private System.Windows.Forms.Button eightBtn;
         private System.Windows.Forms.Button sevenBtn;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button sendBtn;
+        private System.Windows.Forms.Button prevBtn;
+        private System.Windows.Forms.Button nextBtn;
+        private System.Windows.Forms.Button modeBtn;
         private System.Windows.Forms.RichTextBox builderBox;
         private System.Windows.Forms.TextBox statusBox;
         private System.Windows.Forms.RichTextBox notePadBox;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem configureToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem configureDelayToolStripMenuItem;
     }
 }
 
