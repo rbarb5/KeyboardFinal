@@ -68,3 +68,26 @@ namespace KeyboardFinal
                 Console.WriteLine("timer restarted");
             }
             else if (timer1.Enabled == false)
+            {
+                timesPressed = 0;
+                timesPressed++;
+                builderBox.Text = Convert.ToString(timesPressed);
+                timer1.Enabled = true;
+                Console.WriteLine("timer started - not first click");
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            timer1.Interval = interval;
+            timer1.Tick += new EventHandler(timerEnded);
+        }
+
+        private void timerEnded(object sender, EventArgs e)
+        {
+            timer1.Enabled = false;
+            Console.WriteLine("timer ended");
+        }
+
+    }
+}
