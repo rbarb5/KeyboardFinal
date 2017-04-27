@@ -132,16 +132,6 @@ namespace KeyboardFinal
             Console.WriteLine("timer ended");
         }
 
-
-
-
-
-
-
-
-
-
-
         private void twoBtn_Click(object sender, EventArgs e)
         {
             Console.WriteLine(timer1.Interval.ToString());
@@ -170,11 +160,50 @@ namespace KeyboardFinal
                 timer1.Enabled = true;
                 Console.WriteLine("timer started - not first click");
             }
+            if (Str_KeyStrokes == 1)
+            {
+                builderBox.Text = "t";
+            }
+            else if (Str_KeyStrokes == 2)
+            {
+                builderBox.Text = "u";
+            }
+            else if (Str_KeyStrokes == 3) //displays the correct character for each keystroke
+            {
+                builderBox.Text = "v";
+            }
+            else if (Str_KeyStrokes == 4)
+            {
+                builderBox.Text = "2";
+            }
+            else if (Str_KeyStrokes == 5)
+            {
+                builderBox.Text = "T";
+            }
+            else if (Str_KeyStrokes == 6)
+            {
+                builderBox.Text = "U";
+            }
+            else if (Str_KeyStrokes == 7)
+            {
+                builderBox.Text = "V";
+            }
+            if (Str_KeyStrokes == 7)
+            {
+                Str_KeyStrokes = 0;
+            }
+
         }
 
         private void emptyBtn_Click(object sender, EventArgs e)
         {
             notePadBox.AppendText(builderBox.Text);
         }
+
+        private void zeroBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+

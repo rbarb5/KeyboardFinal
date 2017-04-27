@@ -85,6 +85,7 @@
             this.zeroBtn.TabIndex = 41;
             this.zeroBtn.Text = "0";
             this.zeroBtn.UseVisualStyleBackColor = true;
+            this.zeroBtn.Click += new System.EventHandler(this.zeroBtn_Click);
             // 
             // starBtn
             // 
