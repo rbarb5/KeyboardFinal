@@ -56,6 +56,7 @@
             this.configureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configureDelayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -269,7 +270,7 @@
             this.statusBox.Location = new System.Drawing.Point(289, 188);
             this.statusBox.Name = "statusBox";
             this.statusBox.ReadOnly = true;
-            this.statusBox.Size = new System.Drawing.Size(61, 20);
+            this.statusBox.Size = new System.Drawing.Size(80, 20);
             this.statusBox.TabIndex = 45;
             this.statusBox.Text = "Multi-Press";
             // 
@@ -326,11 +327,21 @@
             // 
             this.timer1.Interval = 300;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(170, 502);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(186, 13);
+            this.label1.TabIndex = 48;
+            this.label1.Text = "Press Append to add letter to TextBox";
+            // 
             // Keyboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(556, 561);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.notePadBox);
             this.Controls.Add(this.statusBox);
             this.Controls.Add(this.builderBox);
@@ -393,6 +404,7 @@
         private System.Windows.Forms.ToolStripMenuItem configureDelayToolStripMenuItem;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
     }
 }
 
