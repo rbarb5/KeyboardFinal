@@ -152,6 +152,7 @@
             this.fourBtn.TabIndex = 33;
             this.fourBtn.Text = "4\r\nGHI";
             this.fourBtn.UseVisualStyleBackColor = true;
+            this.fourBtn.Click += new System.EventHandler(this.fourBtn_Click);
             // 
             // emptyBtn
             // 

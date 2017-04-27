@@ -276,7 +276,68 @@ namespace KeyboardFinal
 
         }
 
+        private void fourBtn_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine(timer1.Interval.ToString());
+            builderBox.Clear();
+            if (firstVisit == true)
+            {
+                firstVisit = false;
+                timer1.Enabled = true;
+                Console.WriteLine("timer starter");
+                Str_KeyStrokes++;
+                builderBox.Text = Convert.ToString(Str_KeyStrokes);
+            }
+            else if (timer1.Enabled == true)
+            {
+                Str_KeyStrokes++;
+                builderBox.Text = Convert.ToString(Str_KeyStrokes);
+                timer1.Enabled = false;
+                timer1.Enabled = true;
+                Console.WriteLine("timer restarted");
+            }
+            else if (timer1.Enabled == false)
+            {
+                Str_KeyStrokes = 0;
+                Str_KeyStrokes++;
+                builderBox.Text = Convert.ToString(Str_KeyStrokes);
+                timer1.Enabled = true;
+                Console.WriteLine("timer started - not first click");
+            }
+            if (Str_KeyStrokes == 1)
+            {
+                builderBox.Text = "g";
+            }
+            else if (Str_KeyStrokes == 2)
+            {
+                builderBox.Text = "h";
+            }
+            else if (Str_KeyStrokes == 3) //displays the correct character for each keystroke
+            {
+                builderBox.Text = "i";
+            }
+            else if (Str_KeyStrokes == 4)
+            {
+                builderBox.Text = "4";
+            }
+            else if (Str_KeyStrokes == 5)
+            {
+                builderBox.Text = "G";
+            }
+            else if (Str_KeyStrokes == 6)
+            {
+                builderBox.Text = "H";
+            }
+            else if (Str_KeyStrokes == 7)
+            {
+                builderBox.Text = "I";
+            }
+            if (Str_KeyStrokes == 7)
+            {
+                Str_KeyStrokes = 0;
+            }
 
+        }
     }
 }
 
