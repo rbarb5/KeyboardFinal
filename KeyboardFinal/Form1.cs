@@ -638,6 +638,11 @@ namespace KeyboardFinal
                 Str_KeyStrokes = 0;
             }
         }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            notePadBox.Clear(); //clears the text box
+        }
     }
 }
 
