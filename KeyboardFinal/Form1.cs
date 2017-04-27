@@ -585,33 +585,25 @@ namespace KeyboardFinal
 
             if (Str_KeyStrokes == 1)
             {
-                builderBox.Text = "a";
+                builderBox.Text = "*";
             }
             else if (Str_KeyStrokes == 2)
             {
-                builderBox.Text = "b";
+                builderBox.Text = "-";
             }
             else if (Str_KeyStrokes == 3) //displays the correct character for each keystroke
             {
-                builderBox.Text = "c";
+                builderBox.Text = "_";
             }
             else if (Str_KeyStrokes == 4)
             {
-                builderBox.Text = "8";
+                builderBox.Text = "+";
             }
             else if (Str_KeyStrokes == 5)
             {
-                builderBox.Text = "A";
+                builderBox.Text = "=";
             }
-            else if (Str_KeyStrokes == 6)
-            {
-                builderBox.Text = "B";
-            }
-            else if (Str_KeyStrokes == 7)
-            {
-                builderBox.Text = "C";
-            }
-            if (Str_KeyStrokes == 7)
+            if (Str_KeyStrokes == 5)
             {
                 Str_KeyStrokes = 0;
             }
@@ -688,6 +680,11 @@ namespace KeyboardFinal
         private void hashBtn_Click(object sender, EventArgs e)
         {
             builderBox.Text = "#";
+        }
+
+        private void starBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

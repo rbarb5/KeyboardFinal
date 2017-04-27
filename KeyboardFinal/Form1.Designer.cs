@@ -97,6 +97,7 @@
             this.starBtn.TabIndex = 40;
             this.starBtn.Text = "*-_";
             this.starBtn.UseVisualStyleBackColor = true;
+            this.starBtn.Click += new System.EventHandler(this.starBtn_Click);
             // 
             // threeBtn
             // 
