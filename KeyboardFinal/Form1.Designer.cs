@@ -104,6 +104,7 @@
             this.threeBtn.TabIndex = 38;
             this.threeBtn.Text = "3\r\nWXYZ\r\n";
             this.threeBtn.UseVisualStyleBackColor = true;
+            this.threeBtn.Click += new System.EventHandler(this.threeBtn_Click);
             // 
             // twoBtn
             // 

@@ -204,6 +204,79 @@ namespace KeyboardFinal
         {
 
         }
+
+        private void threeBtn_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine(timer1.Interval.ToString());
+            builderBox.Clear();
+            if (firstVisit == true)
+            {
+                firstVisit = false;
+                timer1.Enabled = true;
+                Console.WriteLine("timer starter");
+                Str_KeyStrokes++;
+                builderBox.Text = Convert.ToString(Str_KeyStrokes);
+            }
+            else if (timer1.Enabled == true)
+            {
+                Str_KeyStrokes++;
+                builderBox.Text = Convert.ToString(Str_KeyStrokes);
+                timer1.Enabled = false;
+                timer1.Enabled = true;
+                Console.WriteLine("timer restarted");
+            }
+            else if (timer1.Enabled == false)
+            {
+                Str_KeyStrokes = 0;
+                Str_KeyStrokes++;
+                builderBox.Text = Convert.ToString(Str_KeyStrokes);
+                timer1.Enabled = true;
+                Console.WriteLine("timer started - not first click");
+            }
+            if (Str_KeyStrokes == 1)
+            {
+                builderBox.Text = "w";
+            }
+            else if (Str_KeyStrokes == 2)
+            {
+                builderBox.Text = "x";
+            }
+            else if (Str_KeyStrokes == 3) //displays the correct character for each keystroke
+            {
+                builderBox.Text = "y";
+            }
+            else if (Str_KeyStrokes == 4)
+            {
+                builderBox.Text = "z";
+            }
+            else if (Str_KeyStrokes == 5)
+            {
+                builderBox.Text = "3";
+            }
+            else if (Str_KeyStrokes == 6)
+            {
+                builderBox.Text = "W";
+            }
+            else if (Str_KeyStrokes == 7)
+            {
+                builderBox.Text = "X";
+            }
+            else if (Str_KeyStrokes == 8)
+            {
+                builderBox.Text = "Y";
+            }
+            else if (Str_KeyStrokes == 9)
+            {
+                builderBox.Text = "Z";
+            }
+            if (Str_KeyStrokes == 9)
+            {
+                Str_KeyStrokes = 0;
+            }
+
+        }
+
+
     }
 }
 
