@@ -174,6 +174,7 @@
             this.nineBtn.TabIndex = 31;
             this.nineBtn.Text = "9\r\nDEF\r\n";
             this.nineBtn.UseVisualStyleBackColor = true;
+            this.nineBtn.Click += new System.EventHandler(this.nineBtn_Click);
             // 
             // eightBtn
             // 
