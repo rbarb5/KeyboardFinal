@@ -687,7 +687,7 @@ namespace KeyboardFinal
 
         private void hashBtn_Click(object sender, EventArgs e)
         {
-            
+            builderBox.Text = "#";
         }
     }
 }
