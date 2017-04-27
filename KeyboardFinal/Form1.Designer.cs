@@ -143,6 +143,7 @@
             this.fiveBtn.TabIndex = 34;
             this.fiveBtn.Text = "5\r\nJKL\r\n";
             this.fiveBtn.UseVisualStyleBackColor = true;
+            this.fiveBtn.Click += new System.EventHandler(this.fiveBtn_Click);
             // 
             // fourBtn
             // 
