@@ -192,6 +192,7 @@
             this.sevenBtn.TabIndex = 29;
             this.sevenBtn.Text = "7\r\n.,\"\r\n";
             this.sevenBtn.UseVisualStyleBackColor = true;
+            this.sevenBtn.Click += new System.EventHandler(this.sevenBtn_Click);
             // 
             // sendBtn
             // 
