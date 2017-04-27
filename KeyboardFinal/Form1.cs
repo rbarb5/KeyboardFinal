@@ -402,6 +402,69 @@ namespace KeyboardFinal
             }
 
         }
+
+        private void sixBtn_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine(timer1.Interval.ToString());
+            builderBox.Clear();
+            if (firstVisit == true) //if its the first time, set firstvisit to false, enable the timer, add 1 to Str_Keystroker and display this in the builderbox
+            {
+                firstVisit = false;
+                timer1.Enabled = true;
+                Console.WriteLine("timer starter");
+                Str_KeyStrokes++;
+                builderBox.Text = Convert.ToString(Str_KeyStrokes);
+            }
+            else if (timer1.Enabled == true) //if the timer is enabled, add 1 to Str_KeyStrokes, reset the timer
+            {
+                Str_KeyStrokes++;
+                builderBox.Text = Convert.ToString(Str_KeyStrokes);
+                timer1.Enabled = false;
+                timer1.Enabled = true;
+                Console.WriteLine("timer restarted");
+            }
+            else if (timer1.Enabled == false) //if the timer isn't enabled, set keystrokes to 1, add 1, enable timer
+            {
+                Str_KeyStrokes = 0;
+                Str_KeyStrokes++;
+                builderBox.Text = Convert.ToString(Str_KeyStrokes);
+                timer1.Enabled = true;
+                Console.WriteLine("timer started - not first click");
+            }
+
+            if (Str_KeyStrokes == 1)
+            {
+                builderBox.Text = "m";
+            }
+            else if (Str_KeyStrokes == 2)
+            {
+                builderBox.Text = "n";
+            }
+            else if (Str_KeyStrokes == 3) //displays the correct character for each keystroke
+            {
+                builderBox.Text = "o";
+            }
+            else if (Str_KeyStrokes == 4)
+            {
+                builderBox.Text = "5";
+            }
+            else if (Str_KeyStrokes == 5)
+            {
+                builderBox.Text = "M";
+            }
+            else if (Str_KeyStrokes == 6)
+            {
+                builderBox.Text = "N";
+            }
+            else if (Str_KeyStrokes == 7)
+            {
+                builderBox.Text = "O";
+            }
+            if (Str_KeyStrokes == 7)
+            {
+                Str_KeyStrokes = 0;
+            }
+        }
     }
 }
 
