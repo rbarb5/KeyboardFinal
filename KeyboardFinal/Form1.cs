@@ -585,25 +585,33 @@ namespace KeyboardFinal
 
             if (Str_KeyStrokes == 1)
             {
-                builderBox.Text = "*";
+                builderBox.Text = "a";
             }
             else if (Str_KeyStrokes == 2)
             {
-                builderBox.Text = "-";
+                builderBox.Text = "b";
             }
             else if (Str_KeyStrokes == 3) //displays the correct character for each keystroke
             {
-                builderBox.Text = "_";
+                builderBox.Text = "c";
             }
             else if (Str_KeyStrokes == 4)
             {
-                builderBox.Text = "+";
+                builderBox.Text = "8";
             }
             else if (Str_KeyStrokes == 5)
             {
-                builderBox.Text = "=";
+                builderBox.Text = "A";
             }
-            if (Str_KeyStrokes == 5)
+            else if (Str_KeyStrokes == 6)
+            {
+                builderBox.Text = "B";
+            }
+            else if (Str_KeyStrokes == 7)
+            {
+                builderBox.Text = "C";
+            }
+            if (Str_KeyStrokes == 7)
             {
                 Str_KeyStrokes = 0;
             }
