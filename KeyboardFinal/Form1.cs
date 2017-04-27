@@ -17,7 +17,6 @@ namespace KeyboardFinal
         int interval = 500;
         int Str_KeyStrokes = 0;
         bool firstVisit = true;
-        string bbox;
 
         public Keyboard()
         {
@@ -205,6 +204,45 @@ namespace KeyboardFinal
 
         private void zeroBtn_Click(object sender, EventArgs e)
         {
+            Console.WriteLine(timer1.Interval.ToString());
+            builderBox.Clear();
+            if (firstVisit == true)
+            {
+                firstVisit = false;
+                timer1.Enabled = true;
+                Console.WriteLine("timer starter");
+                Str_KeyStrokes++;
+                builderBox.Text = Convert.ToString(Str_KeyStrokes);
+            }
+            else if (timer1.Enabled == true)
+            {
+                Str_KeyStrokes++;
+                builderBox.Text = Convert.ToString(Str_KeyStrokes);
+                timer1.Enabled = false;
+                timer1.Enabled = true;
+                Console.WriteLine("timer restarted");
+            }
+            else if (timer1.Enabled == false)
+            {
+                Str_KeyStrokes = 0;
+                Str_KeyStrokes++;
+                builderBox.Text = Convert.ToString(Str_KeyStrokes);
+                timer1.Enabled = true;
+                Console.WriteLine("timer started - not first click");
+            }
+            if (Str_KeyStrokes == 1)
+            {
+                builderBox.Text = " ";
+            }
+            else if (Str_KeyStrokes == 2)
+            {
+                builderBox.Text = "0";
+            }
+            if (Str_KeyStrokes == 2)
+            {
+                Str_KeyStrokes = 0;
+            }
+
 
         }
 
@@ -645,6 +683,11 @@ namespace KeyboardFinal
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
             notePadBox.Clear(); //clears the text box
+        }
+
+        private void hashBtn_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
