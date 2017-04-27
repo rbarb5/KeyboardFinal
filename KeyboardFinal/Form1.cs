@@ -40,7 +40,10 @@ namespace KeyboardFinal
 
         private void configureDelayToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            interval = Convert.ToInt16(My_Dialogs.InputBox("Please enter a delay")); //creates an inputbox to allow the user to choose their delay
+            interval = Convert.ToInt16(My_Dialogs.InputBox("Please enter a delay"));
+            timer1.Interval = interval;
+            
+             //creates an inputbox to allow the user to choose their delay
         }
 
         private void enterBtn_Click(object sender, EventArgs e)
