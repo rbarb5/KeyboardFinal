@@ -61,179 +61,198 @@
             // 
             // enterBtn
             // 
+            this.enterBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.enterBtn.Location = new System.Drawing.Point(320, 384);
             this.enterBtn.Name = "enterBtn";
             this.enterBtn.Size = new System.Drawing.Size(49, 100);
             this.enterBtn.TabIndex = 43;
             this.enterBtn.Text = "Enter";
-            this.enterBtn.UseVisualStyleBackColor = true;
+            this.enterBtn.UseVisualStyleBackColor = false;
             this.enterBtn.Click += new System.EventHandler(this.enterBtn_Click);
             // 
             // hashBtn
             // 
+            this.hashBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.hashBtn.Location = new System.Drawing.Point(265, 437);
             this.hashBtn.Name = "hashBtn";
             this.hashBtn.Size = new System.Drawing.Size(49, 47);
             this.hashBtn.TabIndex = 42;
             this.hashBtn.Text = "#";
-            this.hashBtn.UseVisualStyleBackColor = true;
+            this.hashBtn.UseVisualStyleBackColor = false;
             this.hashBtn.Click += new System.EventHandler(this.hashBtn_Click);
             // 
             // zeroBtn
             // 
+            this.zeroBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.zeroBtn.Location = new System.Drawing.Point(210, 437);
             this.zeroBtn.Name = "zeroBtn";
             this.zeroBtn.Size = new System.Drawing.Size(49, 47);
             this.zeroBtn.TabIndex = 41;
             this.zeroBtn.Text = "0";
-            this.zeroBtn.UseVisualStyleBackColor = true;
+            this.zeroBtn.UseVisualStyleBackColor = false;
             this.zeroBtn.Click += new System.EventHandler(this.zeroBtn_Click);
             // 
             // starBtn
             // 
+            this.starBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.starBtn.Location = new System.Drawing.Point(155, 437);
             this.starBtn.Name = "starBtn";
             this.starBtn.Size = new System.Drawing.Size(49, 47);
             this.starBtn.TabIndex = 40;
             this.starBtn.Text = "*-_";
-            this.starBtn.UseVisualStyleBackColor = true;
+            this.starBtn.UseVisualStyleBackColor = false;
             this.starBtn.Click += new System.EventHandler(this.starBtn_Click);
             // 
             // threeBtn
             // 
+            this.threeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.threeBtn.Location = new System.Drawing.Point(265, 384);
             this.threeBtn.Name = "threeBtn";
             this.threeBtn.Size = new System.Drawing.Size(49, 47);
             this.threeBtn.TabIndex = 38;
             this.threeBtn.Text = "3\r\nWXYZ\r\n";
-            this.threeBtn.UseVisualStyleBackColor = true;
+            this.threeBtn.UseVisualStyleBackColor = false;
             this.threeBtn.Click += new System.EventHandler(this.threeBtn_Click);
             // 
             // twoBtn
             // 
+            this.twoBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.twoBtn.Location = new System.Drawing.Point(210, 384);
             this.twoBtn.Name = "twoBtn";
             this.twoBtn.Size = new System.Drawing.Size(49, 47);
             this.twoBtn.TabIndex = 37;
             this.twoBtn.Text = "2\r\nTUV";
-            this.twoBtn.UseVisualStyleBackColor = true;
+            this.twoBtn.UseVisualStyleBackColor = false;
             this.twoBtn.Click += new System.EventHandler(this.twoBtn_Click);
             // 
             // oneBtn
             // 
+            this.oneBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.oneBtn.Location = new System.Drawing.Point(155, 384);
             this.oneBtn.Name = "oneBtn";
             this.oneBtn.Size = new System.Drawing.Size(49, 47);
             this.oneBtn.TabIndex = 36;
             this.oneBtn.Text = "1\r\nPQRS";
-            this.oneBtn.UseVisualStyleBackColor = true;
+            this.oneBtn.UseVisualStyleBackColor = false;
             this.oneBtn.Click += new System.EventHandler(this.oneBtn_Click);
             // 
             // sixBtn
             // 
+            this.sixBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.sixBtn.Location = new System.Drawing.Point(265, 331);
             this.sixBtn.Name = "sixBtn";
             this.sixBtn.Size = new System.Drawing.Size(49, 47);
             this.sixBtn.TabIndex = 35;
             this.sixBtn.Text = "6\r\nMNO";
-            this.sixBtn.UseVisualStyleBackColor = true;
+            this.sixBtn.UseVisualStyleBackColor = false;
             this.sixBtn.Click += new System.EventHandler(this.sixBtn_Click);
             // 
             // fiveBtn
             // 
+            this.fiveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.fiveBtn.Location = new System.Drawing.Point(210, 331);
             this.fiveBtn.Name = "fiveBtn";
             this.fiveBtn.Size = new System.Drawing.Size(49, 47);
             this.fiveBtn.TabIndex = 34;
             this.fiveBtn.Text = "5\r\nJKL\r\n";
-            this.fiveBtn.UseVisualStyleBackColor = true;
+            this.fiveBtn.UseVisualStyleBackColor = false;
             this.fiveBtn.Click += new System.EventHandler(this.fiveBtn_Click);
             // 
             // fourBtn
             // 
+            this.fourBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.fourBtn.Location = new System.Drawing.Point(155, 331);
             this.fourBtn.Name = "fourBtn";
             this.fourBtn.Size = new System.Drawing.Size(49, 47);
             this.fourBtn.TabIndex = 33;
             this.fourBtn.Text = "4\r\nGHI";
-            this.fourBtn.UseVisualStyleBackColor = true;
+            this.fourBtn.UseVisualStyleBackColor = false;
             this.fourBtn.Click += new System.EventHandler(this.fourBtn_Click);
             // 
             // emptyBtn
             // 
+            this.emptyBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.emptyBtn.Location = new System.Drawing.Point(320, 278);
             this.emptyBtn.Name = "emptyBtn";
             this.emptyBtn.Size = new System.Drawing.Size(49, 100);
             this.emptyBtn.TabIndex = 32;
             this.emptyBtn.Text = "Append";
-            this.emptyBtn.UseVisualStyleBackColor = true;
+            this.emptyBtn.UseVisualStyleBackColor = false;
             this.emptyBtn.Click += new System.EventHandler(this.emptyBtn_Click);
             // 
             // nineBtn
             // 
+            this.nineBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.nineBtn.Location = new System.Drawing.Point(265, 278);
             this.nineBtn.Name = "nineBtn";
             this.nineBtn.Size = new System.Drawing.Size(49, 47);
             this.nineBtn.TabIndex = 31;
             this.nineBtn.Text = "9\r\nDEF\r\n";
-            this.nineBtn.UseVisualStyleBackColor = true;
+            this.nineBtn.UseVisualStyleBackColor = false;
             this.nineBtn.Click += new System.EventHandler(this.nineBtn_Click);
             // 
             // eightBtn
             // 
+            this.eightBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.eightBtn.Location = new System.Drawing.Point(210, 278);
             this.eightBtn.Name = "eightBtn";
             this.eightBtn.Size = new System.Drawing.Size(49, 47);
             this.eightBtn.TabIndex = 30;
             this.eightBtn.Text = "8\r\nABC";
-            this.eightBtn.UseVisualStyleBackColor = true;
+            this.eightBtn.UseVisualStyleBackColor = false;
             this.eightBtn.Click += new System.EventHandler(this.eightBtn_Click);
             // 
             // sevenBtn
             // 
+            this.sevenBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.sevenBtn.Location = new System.Drawing.Point(155, 278);
             this.sevenBtn.Name = "sevenBtn";
             this.sevenBtn.Size = new System.Drawing.Size(49, 47);
             this.sevenBtn.TabIndex = 29;
             this.sevenBtn.Text = "7\r\n.,\"\r\n";
-            this.sevenBtn.UseVisualStyleBackColor = true;
+            this.sevenBtn.UseVisualStyleBackColor = false;
             this.sevenBtn.Click += new System.EventHandler(this.sevenBtn_Click);
             // 
             // sendBtn
             // 
+            this.sendBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.sendBtn.Location = new System.Drawing.Point(320, 225);
             this.sendBtn.Name = "sendBtn";
             this.sendBtn.Size = new System.Drawing.Size(49, 47);
             this.sendBtn.TabIndex = 28;
             this.sendBtn.Text = "Send Predicted";
-            this.sendBtn.UseVisualStyleBackColor = true;
+            this.sendBtn.UseVisualStyleBackColor = false;
             // 
             // prevBtn
             // 
+            this.prevBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.prevBtn.Location = new System.Drawing.Point(265, 225);
             this.prevBtn.Name = "prevBtn";
             this.prevBtn.Size = new System.Drawing.Size(49, 47);
             this.prevBtn.TabIndex = 27;
             this.prevBtn.Text = "Previous";
-            this.prevBtn.UseVisualStyleBackColor = true;
+            this.prevBtn.UseVisualStyleBackColor = false;
             // 
             // nextBtn
             // 
+            this.nextBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.nextBtn.Location = new System.Drawing.Point(210, 225);
             this.nextBtn.Name = "nextBtn";
             this.nextBtn.Size = new System.Drawing.Size(49, 47);
             this.nextBtn.TabIndex = 26;
             this.nextBtn.Text = "Next";
-            this.nextBtn.UseVisualStyleBackColor = true;
+            this.nextBtn.UseVisualStyleBackColor = false;
             // 
             // modeBtn
             // 
+            this.modeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.modeBtn.ForeColor = System.Drawing.Color.Black;
             this.modeBtn.Location = new System.Drawing.Point(155, 225);
             this.modeBtn.Name = "modeBtn";
             this.modeBtn.Size = new System.Drawing.Size(49, 47);
             this.modeBtn.TabIndex = 25;
             this.modeBtn.Text = "Mode";
-            this.modeBtn.UseVisualStyleBackColor = true;
+            this.modeBtn.UseVisualStyleBackColor = false;
             this.modeBtn.Click += new System.EventHandler(this.modeBtn_Click);
             // 
             // builderBox
