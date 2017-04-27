@@ -183,6 +183,7 @@
             this.eightBtn.TabIndex = 30;
             this.eightBtn.Text = "8\r\nABC";
             this.eightBtn.UseVisualStyleBackColor = true;
+            this.eightBtn.Click += new System.EventHandler(this.eightBtn_Click);
             // 
             // sevenBtn
             // 
